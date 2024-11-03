@@ -1,0 +1,9 @@
+executable            = run.sh
+arguments             = "$(argument)"
+output                = run.$(ClusterId).$(ProcId).out
+error                 = run.$(ClusterId).$(ProcId).err
+log                   = run.$(ClusterId).log
++JobFlavour           = "nextweek"
+
+queue argument in fourtops
+

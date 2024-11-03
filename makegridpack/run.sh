@@ -14,10 +14,10 @@ source $AtlasSetup/scripts/asetup.sh AthGeneration,23.6.38,here
 #cd Generators/MadGraphControl/cmt
 #make clean; make
 cd $TestArea
-mkdir run6/
-cd run6/
+mkdir run/
+cd run/
 
-cp -r /afs/cern.ch/work/s/ssindhu/private/POWHEG_2024/October2024_tests/fourtops .
+cp -r /afs/cern.ch/work/s/ssindhu/private/POWHEG_2024/October2024_tests/makegridpack/fourtops .
 #cp /afs/cern.ch/user/p/peiffer/work/MadgraphTEST/run/$1 .
 
 ls -l
@@ -28,7 +28,7 @@ Gen_tf.py --ecmEnergy=13000 --randomSeed=12345 --firstEvent=1 --maxEvents=10 --j
 
 echo "--------- END ---------"
 cd ..
-cp -r run6 /afs/cern.ch/work/s/ssindhu/private/POWHEG_2024/October2024_tests/
+cp -r run6 /afs/cern.ch/work/s/ssindhu/private/POWHEG_2024/October2024_tests/makegridpack/
 #cp *events.tar.gz /afs/cern.ch/work/s/ssindhu/private/POWHEG_2024/October2024_tests/
 
 #cp log.generate /afs/cern.ch/user/p/peiffer/.
